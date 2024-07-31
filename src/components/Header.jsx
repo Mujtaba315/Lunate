@@ -13,20 +13,36 @@ function Header () {
         $('.sub-menu-js').addClass('sub-menu-active');
         $('.menu-item-js').removeClass('menu-item-active');
         $(e.currentTarget).addClass('menu-item-active');
+        var menuItemId = $(e.currentTarget).attr('id');
+        $('.sub-menu-list').removeClass('sub-menu-list-active');
+        $('#' + menuItemId + '-list').addClass('sub-menu-list-active');
+        $('.sol-dropdown').removeClass('sol-dropdown-active');
+        
     }
 
     function handleHeaderMouseLeave () {
         $('.sub-menu-js').removeClass('sub-menu-active');
         $('.menu-item-js').removeClass('menu-item-active');
+        $('.sol-dropdown').removeClass('sol-dropdown-active');
     }
 
     function handleContactLangMouseOver () {
+        $('.sub-menu-js').removeClass('sub-menu-active');
         $('.menu-item-js').removeClass('menu-item-active');
+        $('.sol-dropdown').removeClass('sol-dropdown-active');
     } 
 
     function handleCrossClick () {
         $('.sub-menu-js').removeClass('sub-menu-active');
         $('.menu-item-js').removeClass('menu-item-active');
+        $('.sol-dropdown').removeClass('sol-dropdown-active');
+    }
+
+    function handleSubMenuLinkMouseOver (e) {
+        $('.sol-dropdown').removeClass('sol-dropdown-active');
+        if ($(e.currentTarget).hasClass('sol-pro')){
+            $('.sol-dropdown').addClass('sol-dropdown-active');
+        }
     }
 
     return (
@@ -42,7 +58,7 @@ function Header () {
                 <div className='header-lists'>
                     <div className='header-list'>
                         <ul className='main-menu'>
-                            <li className='menu-item menu-item-js' onMouseOver={handleMenuItemMouseOver}>
+                            <li id='about' className='menu-item menu-item-js' onMouseOver={handleMenuItemMouseOver}>
                                 <a href="#">
                                     About Lunate
                                     <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -50,7 +66,7 @@ function Header () {
                                     </svg>
                                 </a>
                             </li>
-                            <li className='menu-item menu-item-js' onMouseOver={handleMenuItemMouseOver}>
+                            <li id='approach' className='menu-item menu-item-js' onMouseOver={handleMenuItemMouseOver}>
                                 <a href="#">
                                     Our Approach
                                     <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -58,12 +74,12 @@ function Header () {
                                     </svg>
                                 </a>
                             </li>
-                            <li className='menu-item menu-item-js' onMouseOver={handleMenuItemMouseOver}>
+                            <li id='news' className='menu-item menu-item-js' onMouseOver={handleMenuItemMouseOver}>
                                 <a href="#">
                                     News & Insights
                                 </a>
                             </li>
-                            <li className='menu-item menu-item-js' onMouseOver={handleMenuItemMouseOver}>
+                            <li id='careers' className='menu-item menu-item-js' onMouseOver={handleMenuItemMouseOver}>
                                 <a href="#">
                                     Careers
                                 </a>
@@ -85,12 +101,61 @@ function Header () {
 
                     <div className='sub-menu sub-menu-js'>
                         <div className='sub-menu-lists'>
-                            <ul className='sub-menu-list-1'>
-                                <li className='sub-menu-link'>
+                            <ul id='about-list' className='sub-menu-list'>
+                                <li className='sub-menu-link' onMouseOver={handleSubMenuLinkMouseOver}>
                                     <a href="#">Who We Are</a>
                                 </li>
-                                <li className='sub-menu-link'>
+                                <li className='sub-menu-link' onMouseOver={handleSubMenuLinkMouseOver}>
                                     <a href="#">Our People</a>
+                                </li>
+                            </ul>
+
+                            <ul id='approach-list' className='sub-menu-list'>
+                                <li className='sub-menu-link' onMouseOver={handleSubMenuLinkMouseOver}>
+                                    <a href="#">Strategies</a>
+                                </li>
+                                <li className='sub-menu-link' onMouseOver={handleSubMenuLinkMouseOver}>
+                                    <a href="#">Asset Classes</a>
+                                </li>
+                                <li className='sub-menu-link sol-pro' onMouseOver={handleSubMenuLinkMouseOver}>
+                                    <a>
+                                        Solutions & Products
+                                        <svg className='side-dropdown-arrow' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 17.9995L15 11.9995L9 5.99951" strokeLinecap="round" strokeLinejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <ul className='sol-dropdown'>
+                                    <li className='sol-dropdown-item'>
+                                        <a href="#">
+                                            Solutions
+                                        </a>
+                                    </li>
+                                    <li className='sol-dropdown-item'>
+                                        <a href="#">
+                                            ETFs Overview
+                                            <svg className='overview' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M18 12.9995V18.9995C18 19.5299 17.7893 20.0387 17.4142 20.4137C17.0391 20.7888 16.5304 20.9995 16 20.9995H5C4.46957 20.9995 3.96086 20.7888 3.58579 20.4137C3.21071 20.0387 3 19.5299 3 18.9995V7.99951C3 7.46908 3.21071 6.96037 3.58579 6.5853C3.96086 6.21023 4.46957 5.99951 5 5.99951H11" strokeLinecap="round" strokeLinejoin="round"/>
+                                                <path d="M15 2.99951H21V8.99951" strokeLinecap="round" strokeLinejoin="round"/>
+                                                <path d="M10 13.9995L21 2.99951" strokeLinecap="round" strokeLinejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </ul>
+
+                            <ul id='news-list' className='sub-menu-list'>
+                                <li className='sub-menu-link' onMouseOver={handleSubMenuLinkMouseOver}>
+                                    <a href="#">News OR Insight 1</a>
+                                </li>
+                                <li className='sub-menu-link' onMouseOver={handleSubMenuLinkMouseOver}>
+                                    <a href="#">News OR Insight N</a>
+                                </li>
+                            </ul>
+
+                            <ul id='careers-list' className='sub-menu-list'>
+                                <li className='sub-menu-link' onMouseOver={handleSubMenuLinkMouseOver}>
+                                    <a href="#">Working at Lunate</a>
                                 </li>
                             </ul>
                             <div className='pattern-bg'>
