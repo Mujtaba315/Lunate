@@ -5,7 +5,7 @@ import slide_1 from '../assets/images/slide_1.webp';
 import slide_2 from '../assets/images/slide_2.webp';
 import slide_3 from '../assets/images/slide_3.webp';
 
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, Thumbs } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -13,12 +13,13 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-import { useState } from 'react';
-import { Thumbs } from 'swiper/modules';
+import { useState, useRef } from 'react';
 
 function Slider () {
 
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
+    const swiperRef = useRef(null);
 
     function handleExploreLinkMouseEnter () {
         $('.explore-link-arrow-js').removeClass('on-mouse-out');
@@ -28,6 +29,29 @@ function Slider () {
     function handleExploreLinkMouseLeave () {
         $('.explore-link-arrow-js').removeClass('on-mouse-in');
         $('.explore-link-arrow-js').addClass('on-mouse-out');
+    }
+
+
+    function handleNextButtonClick () {
+        // console.log("next" + swiperRef.current);
+
+        if (swiperRef.current) {
+            swiperRef.current.swiper.slideNext();
+        } 
+        // else {
+        //     console.error("next Swiper instance not found");
+        // }
+    }
+
+    function handlePrevButtonClick () {
+        // console.log("prev" + swiperRef.current);
+
+        if (swiperRef.current) {
+            swiperRef.current.swiper.slidePrev();
+        } 
+        // else {
+        //     console.error("prev Swiper instance not found");
+        // }
     }
 
 
@@ -52,13 +76,33 @@ function Slider () {
             </div>
             <div className='slider-sec'>
                 <Swiper
+                    modules={[Thumbs]}
+                    onSwiper={setThumbsSwiper}
+                    loop = {true}
+                >
+                    <SwiperSlide> 
+                        <h4 className='slide-heading'>Asset Classes</h4>
+                        <p className='slide-description'>We invest across asset classes, including Private Equity, Venture Capital, Credit, Real Assets, GP Stakes, and Public Markets.</p>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <h4 className='slide-heading'>Investment Strategies</h4>
+                        <p className='slide-description'>We deploy capital through a broad spectrum of strategies, including Fund Investments, Direct and Co-Investments, Long-Term Capital, Special Opportunities, and Climate Investments</p>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <h4 className='slide-heading'>Solutions</h4>
+                        <p className='slide-description'>We primarily manage private markets-focused customised portfolios for our clients, seeking to deliver tailored solutions with superior risk-adjusted returns. We also manage and/or co-manage private markets commingled funds. We are the leading ETF manager in the MENA region.</p>
+                    </SwiperSlide>
+                </Swiper>
+
+                <Swiper
+                    ref={swiperRef}
                     modules={[Navigation, Pagination, Thumbs]}
                     thumbs={{ swiper: thumbsSwiper }}
                     spaceBetween={50}
                     slidesPerView={1}
                     navigation
                     pagination={{ clickable: true, type: 'progressbar' }}
-                    loop = 'true'
+                    loop = {true}
                 >
                     <SwiperSlide> 
                         <img className='slider-img' src={slide_1} alt="Slide 1" /> 
@@ -70,23 +114,39 @@ function Slider () {
                         <img className='slider-img' src={slide_3} alt="Slide 3" /> 
                     </SwiperSlide>
                 </Swiper>
+            </div>
+            <div className='nav-btns'>
+                <div className='prev-btn' onClick={handlePrevButtonClick}>
 
-                <Swiper
-                    modules={[Thumbs]}
-                    watchSlidesProgress
-                    onSwiper={setThumbsSwiper}
-                >
-                    <SwiperSlide> 
-                        Slide 1
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        Slide 2 
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        Slide 3
-                    </SwiperSlide>
-
-                </Swiper>
+                    {/* <svg width="1.5rem" height="1.563rem" viewBox="0 0 1.5rem 1.563rem" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_8208_3755)">
+                            <path d="M15 18.2891L9 12.2891L15 6.28906" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_8208_3755">
+                                <rect width="1.5rem" height="1.5rem" fill="white" transform="matrix(-1 0 0 1 1.5rem 0.289062)"/>
+                            </clipPath>
+                        </defs>
+                    </svg> */}
+                    <svg width=".5rem" height=".875rem" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 13.2891L1 7.28906L7 1.28906" stroke="white" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                </div>
+                <div className='next-btn' onClick={handleNextButtonClick}>
+                    {/* <svg width="1.5rem" height="1.563rem" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_8208_5694)">
+                            <path d="M9 18.2891L15 12.2891L9 6.28906" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_8208_5694">
+                                <rect width="1.5rem" height="1.5rem" fill="white" transform="translate(0 0.289062)"/>
+                            </clipPath>
+                        </defs>
+                    </svg> */}
+                    <svg width=".5rem" height=".875rem" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 13.2891L7 7.28906L1 1.28906" stroke="white" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                </div>
             </div>
         </div>
     );
