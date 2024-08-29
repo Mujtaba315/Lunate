@@ -74,6 +74,26 @@ function Slider () {
         // }
     }
 
+    function handlePrevBtnMouseEnter () {
+        $('.prev-btn-arrow-js').removeClass('on-mouse-out');
+        $('.prev-btn-arrow-js').addClass('on-mouse-in');
+    }
+
+    function handlePrevBtnMouseLeave () {
+        $('.prev-btn-arrow-js').removeClass('on-mouse-in');
+        $('.prev-btn-arrow-js').addClass('on-mouse-out');
+    }
+
+    function handleNextBtnMouseEnter () {
+        $('.next-btn-arrow-js').removeClass('on-mouse-out');
+        $('.next-btn-arrow-js').addClass('on-mouse-in');
+    }
+
+    function handleNextBtnMouseLeave () {
+        $('.next-btn-arrow-js').removeClass('on-mouse-in');
+        $('.next-btn-arrow-js').addClass('on-mouse-out');
+    }
+
     function handleSlideChange () {
         if (swiperRef.current) {
             updateProgress();
@@ -176,7 +196,7 @@ function Slider () {
                 </Swiper>
             </div>
             <div className='nav-btns'>
-                <div className='prev-btn' onClick={handlePrevButtonClick}>
+                <div className='prev-btn' onClick={handlePrevButtonClick}  onMouseEnter={handlePrevBtnMouseEnter} onMouseLeave={handlePrevBtnMouseLeave}>
 
                     {/* <svg width="1.5rem" height="1.563rem" viewBox="0 0 1.5rem 1.563rem" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_8208_3755)">
@@ -188,11 +208,13 @@ function Slider () {
                             </clipPath>
                         </defs>
                     </svg> */}
-                    <svg width=".5rem" height=".875rem" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7 13.2891L1 7.28906L7 1.28906" stroke="white" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
+                    <span className='nav-btn-span'>
+                        <svg className='prev-btn-arrow prev-btn-arrow-js' width=".5rem" height=".875rem" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 13.2891L1 7.28906L7 1.28906" stroke="white" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </span>
                 </div>
-                <div className='next-btn' onClick={handleNextButtonClick}>
+                <div className='next-btn' onClick={handleNextButtonClick} onMouseEnter={handleNextBtnMouseEnter} onMouseLeave={handleNextBtnMouseLeave}>
                     {/* <svg width="1.5rem" height="1.563rem" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_8208_5694)">
                             <path d="M9 18.2891L15 12.2891L9 6.28906" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
@@ -203,9 +225,11 @@ function Slider () {
                             </clipPath>
                         </defs>
                     </svg> */}
-                    <svg width=".5rem" height=".875rem" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 13.2891L7 7.28906L1 1.28906" stroke="white" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
+                    <span className='nav-btn-span'>
+                        <svg className='next-btn-arrow next-btn-arrow-js' width=".5rem" height=".875rem" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 13.2891L7 7.28906L1 1.28906" stroke="white" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </span>
                 </div>
             </div>
 

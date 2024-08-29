@@ -49,6 +49,8 @@
                 font-weight: 500;
                 font-size: 1.125rem;
                 line-height: 1.436rem;
+                display: flex;
+                max-width: max-content;
 
                 .explore-link-span{
                     margin-left: .625rem;
@@ -216,6 +218,7 @@
         margin-top: -5rem;
         z-index: 2;
         position: relative;
+        margin-bottom: 1rem;
 
         .prev-btn,
         .next-btn {
@@ -227,6 +230,59 @@
             align-items: center;
             justify-content: center;
             cursor: pointer;
+
+            .nav-btn-span{
+                display: flex;
+                overflow: hidden;
+                
+                .prev-btn-arrow,
+                .next-btn-arrow {
+                    &.on-mouse-in {
+                        animation-name: animateArrow;
+                        animation-duration: .3s;
+                        animation-iteration-count: 1;
+        
+                    }
+        
+                    @keyframes animateArrow {
+                        0% {
+                            transform: translateX(0);
+                        }
+                        50% {
+                            transform: translateX(60%);
+                        }
+                        51% {
+                            transform: translateX(-60%);
+                        }
+                        100% {
+                            transform: translateX(0);
+                        }
+                    }
+        
+                    &.on-mouse-out {
+                        animation-name: reverseAnimateArrow;
+                        animation-duration: .3s;
+                        animation-iteration-count: 1;
+                    }
+        
+                    @keyframes reverseAnimateArrow {
+                        0% {
+                            transform: translateX(0);
+                        }
+                        50% {
+                            transform: translateX(-60%);
+                        }
+                        51% {
+                            transform: translateX(60%);
+                        }
+                        100% {
+                            transform: translateX(0);
+                        }
+                    }
+                }
+            }
+
+
         }
     }
 
