@@ -30,7 +30,7 @@
 
         .view-all {
             height: max-content;
-            
+
             .view-all-link {
                 color: #A68B5C;
                 text-decoration: none;
@@ -99,5 +99,247 @@
             }
         }    
         
+    }
+
+    .news-sec {
+        display: flex;
+        justify-content: space-between;
+
+        .main-news {
+            max-width: 47.675%;
+
+            .news-image {
+                display: flex;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .news-detail {
+                font-family: 'Space Grotesk', Times, serif;
+
+                p {
+                    margin: 0;
+                }
+                
+                .category-date {
+                    padding: 1.875rem 0 2.5rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-weight: 700;
+                    font-size: 1rem;
+                    line-height: 1.276;
+
+                    .category {
+                        color: #A68B5C;
+                    }
+
+                    .date {
+                        color: #A8A1A3;
+                    }
+                }
+
+                .description {
+                    font-size: 2rem;
+                    font-weight: 400;
+                    line-height: 1.276;
+                    padding-bottom: 2.5rem;
+                }
+
+                .read-more {
+                    .read-more-link {
+                        display: flex;
+                        align-items: center;
+                        column-gap: .625rem;
+                        font-weight: 500;
+                        font-size: 1.125rem;
+                        line-height: 1.276;
+                        text-decoration: none;
+                        color: #453D43;
+                        max-width: max-content;
+
+                        .read-more-link-span {
+                            display: flex;
+                            overflow: hidden;
+                            align-items: center;
+                            justify-content: center;
+
+                            .read-more-link-arrow {
+                                fill: #453D43;
+
+                                &.on-mouse-in {
+                                    animation-name: animateArrow;
+                                    animation-duration: .3s;
+                                    animation-iteration-count: 1;
+        
+                                }
+        
+                                @keyframes animateArrow {
+                                    0% {
+                                        transform: translateX(0);
+                                    }
+                                    50% {
+                                        transform: translateX(60%);
+                                    }
+                                    51% {
+                                        transform: translateX(-60%);
+                                    }
+                                    100% {
+                                        transform: translateX(0);
+                                    }
+                                }
+        
+                                &.on-mouse-out {
+                                    animation-name: reverseAnimateArrow;
+                                    animation-duration: .3s;
+                                    animation-iteration-count: 1;
+                                }
+        
+                                @keyframes reverseAnimateArrow {
+                                    0% {
+                                        transform: translateX(0);
+                                    }
+                                    50% {
+                                        transform: translateX(-60%);
+                                    }
+                                    51% {
+                                        transform: translateX(60%);
+                                    }
+                                    100% {
+                                        transform: translateX(0);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .side-news {
+            max-width: 47.675%;
+
+            .side-news-1, 
+            .side-news-2,
+            .side-news-3 {
+                display: flex;
+                column-gap: 1.875rem;
+                margin-bottom: 3.75rem;
+
+                .side-news-image {
+                    display: flex;
+                    min-width: 26.83%;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                .side-news-detail {
+                    font-family: 'Space Grotesk', Times, serif;
+    
+                    p {
+                        margin: 0;
+                    }
+                    
+                    .category-date {
+                        padding-bottom: 1.25rem;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-weight: 700;
+                        font-size: 1rem;
+                        line-height: 1.276;
+    
+                        .category {
+                            color: #A68B5C;
+                        }
+    
+                        .date {
+                            color: #A8A1A3;
+                        }
+                    }
+    
+                    .description {
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                        line-height: 1.276;
+                        padding-bottom: 2.5rem;
+                    }
+    
+                    .read-more {
+                        .read-more-link {
+                            display: flex;
+                            align-items: center;
+                            column-gap: .625rem;
+                            font-weight: 500;
+                            font-size: 1.125rem;
+                            line-height: 1.276;
+                            text-decoration: none;
+                            color: #453D43;
+                            max-width: max-content;
+    
+                            .read-more-link-span {
+                                display: flex;
+                                overflow: hidden;
+                                align-items: center;
+                                justify-content: center;
+    
+                                .read-more-link-arrow {
+                                    fill: #453D43;
+    
+                                    &.on-mouse-in {
+                                        animation-name: animateArrow;
+                                        animation-duration: .3s;
+                                        animation-iteration-count: 1;
+            
+                                    }
+            
+                                    @keyframes animateArrow {
+                                        0% {
+                                            transform: translateX(0);
+                                        }
+                                        50% {
+                                            transform: translateX(60%);
+                                        }
+                                        51% {
+                                            transform: translateX(-60%);
+                                        }
+                                        100% {
+                                            transform: translateX(0);
+                                        }
+                                    }
+            
+                                    &.on-mouse-out {
+                                        animation-name: reverseAnimateArrow;
+                                        animation-duration: .3s;
+                                        animation-iteration-count: 1;
+                                    }
+            
+                                    @keyframes reverseAnimateArrow {
+                                        0% {
+                                            transform: translateX(0);
+                                        }
+                                        50% {
+                                            transform: translateX(-60%);
+                                        }
+                                        51% {
+                                            transform: translateX(60%);
+                                        }
+                                        100% {
+                                            transform: translateX(0);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
