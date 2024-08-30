@@ -1,0 +1,103 @@
+.news {
+    padding: 10rem 6.25rem;
+
+    .upper-sec {
+        margin-bottom: 7.5rem;
+        display: flex;
+        justify-content: space-between;
+
+        .title-sec {
+            max-width: 47.675%;
+            border-top: .06rem solid #A68B5C;
+
+            .small-heading {
+                color: #A68B5C;
+                font-family: 'Space Grotesk', Times, serif;
+                font-weight: 700;
+                font-size: 1.5rem;
+                line-height: 1.275;
+                margin: 2.5rem 0;
+            }
+
+            .big-heading {
+                font-family: 'Space Grotesk', Times, serif;
+                font-weight: 700;
+                font-size: 3.375rem;
+                line-height: 1.275;
+                margin: 0;
+            }
+        }
+
+        .view-all {
+            height: max-content;
+            
+            .view-all-link {
+                color: #A68B5C;
+                text-decoration: none;
+                padding: 1.406rem 2rem;
+                border: .06rem solid;
+                border-radius: 3rem;
+                font-family: 'Space Grotesk', Times, serif;
+                font-weight: 500;
+                font-size: 1.125rem;
+                line-height: 1.436rem;
+                display: flex;
+                max-width: max-content;
+    
+                .view-all-link-span{
+                    margin-left: .625rem;
+                    overflow: hidden;
+    
+                    .view-all-link-arrow {
+                        margin-bottom: -.125rem;
+                        fill: #A68B5C;
+    
+                        &.on-mouse-in {
+                            animation-name: animateArrow;
+                            animation-duration: .3s;
+                            animation-iteration-count: 1;
+    
+                        }
+    
+                        @keyframes animateArrow {
+                            0% {
+                                transform: translateX(0);
+                            }
+                            50% {
+                                transform: translateX(60%);
+                            }
+                            51% {
+                                transform: translateX(-60%);
+                            }
+                            100% {
+                                transform: translateX(0);
+                            }
+                        }
+    
+                        &.on-mouse-out {
+                            animation-name: reverseAnimateArrow;
+                            animation-duration: .3s;
+                            animation-iteration-count: 1;
+                        }
+    
+                        @keyframes reverseAnimateArrow {
+                            0% {
+                                transform: translateX(0);
+                            }
+                            50% {
+                                transform: translateX(-60%);
+                            }
+                            51% {
+                                transform: translateX(60%);
+                            }
+                            100% {
+                                transform: translateX(0);
+                            }
+                        }
+                    }
+                }
+            }
+        }    
+        
+    }
+}
