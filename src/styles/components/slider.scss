@@ -1,5 +1,5 @@
 .slider {
-   padding: 10rem 6.25rem 11.875rem;
+   padding: 10rem 6.25rem 10.001rem;
    background-color: #9A9194;
    color: #fff;
 
@@ -215,10 +215,9 @@
         display: flex;
         column-gap: .625rem;
         justify-content: flex-end;
-        margin-top: -5rem;
+        margin-top: -2.4rem;
         z-index: 2;
         position: relative;
-        margin-bottom: 1rem;
 
         .prev-btn,
         .next-btn {
@@ -415,7 +414,7 @@
             left: 0;
             height: .06rem;
             background: #F2E8D9;
-            margin: -2.93rem 0 0 50%;
+            margin: -1.9rem 0 0 50%;
             transform: translateX(-50%);
             max-width: 47.675%;
 
