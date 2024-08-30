@@ -234,7 +234,7 @@ function Slider () {
             </div>
 
             <div className="slider-progress-wrap">
-                <div className="slider-progress"></div>
+                {/* <div className="slider-progress"></div> */}
                 {/* <div className="slider-progress2" style={{ width: progress + 'px' }}></div> */}
                 <div className="slider-scrollbar"></div>
             </div>
