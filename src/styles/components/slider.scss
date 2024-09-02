@@ -286,13 +286,13 @@
                 
                 .next-btn-arrow {
                     &.on-mouse-in {
-                        animation-name: animateArrow;
+                        animation-name: animateNextArrow;
                         animation-duration: .3s;
                         animation-iteration-count: 1;
         
                     }
         
-                    @keyframes animateArrow {
+                    @keyframes animateNextArrow {
                         0% {
                             transform: translateX(0);
                         }
@@ -308,12 +308,12 @@
                     }
         
                     &.on-mouse-out {
-                        animation-name: reverseAnimateArrow;
+                        animation-name: reverseAnimateNextArrow;
                         animation-duration: .3s;
                         animation-iteration-count: 1;
                     }
         
-                    @keyframes reverseAnimateArrow {
+                    @keyframes reverseAnimateNextArrow {
                         0% {
                             transform: translateX(0);
                         }
