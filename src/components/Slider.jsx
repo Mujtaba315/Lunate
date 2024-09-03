@@ -39,14 +39,18 @@ function Slider () {
         }
     }, []);
 
-    function handleExploreLinkMouseEnter () {
-        $('.explore-link-arrow-js').removeClass('on-mouse-out');
-        $('.explore-link-arrow-js').addClass('on-mouse-in');
+    function handleExploreLinkMouseEnter (e) {
+        // $('.explore-link-arrow-js').removeClass('on-mouse-out');
+        // $('.explore-link-arrow-js').addClass('on-mouse-in');
+        $(e.currentTarget).find('.explore-link-arrow-js').removeClass('on-mouse-out');
+        $(e.currentTarget).find('.explore-link-arrow-js').addClass('on-mouse-in');
     }
 
-    function handleExploreLinkMouseLeave () {
-        $('.explore-link-arrow-js').removeClass('on-mouse-in');
-        $('.explore-link-arrow-js').addClass('on-mouse-out');
+    function handleExploreLinkMouseLeave (e) {
+        // $('.explore-link-arrow-js').removeClass('on-mouse-in');
+        // $('.explore-link-arrow-js').addClass('on-mouse-out');
+        $(e.currentTarget).find('.explore-link-arrow-js').removeClass('on-mouse-in');
+        $(e.currentTarget).find('.explore-link-arrow-js').addClass('on-mouse-out');
     }
 
 
@@ -74,24 +78,32 @@ function Slider () {
         // }
     }
 
-    function handlePrevBtnMouseEnter () {
-        $('.prev-btn-arrow-js').removeClass('on-mouse-out');
-        $('.prev-btn-arrow-js').addClass('on-mouse-in');
+    function handlePrevBtnMouseEnter (e) {
+        // $('.prev-btn-arrow-js').removeClass('on-mouse-out');
+        // $('.prev-btn-arrow-js').addClass('on-mouse-in');
+        $(e.currentTarget).find('.prev-btn-arrow-js').removeClass('on-mouse-out');
+        $(e.currentTarget).find('.prev-btn-arrow-js').addClass('on-mouse-in');
     }
 
-    function handlePrevBtnMouseLeave () {
-        $('.prev-btn-arrow-js').removeClass('on-mouse-in');
-        $('.prev-btn-arrow-js').addClass('on-mouse-out');
+    function handlePrevBtnMouseLeave (e) {
+        // $('.prev-btn-arrow-js').removeClass('on-mouse-in');
+        // $('.prev-btn-arrow-js').addClass('on-mouse-out');
+        $(e.currentTarget).find('.prev-btn-arrow-js').removeClass('on-mouse-in');
+        $(e.currentTarget).find('.prev-btn-arrow-js').addClass('on-mouse-out');
     }
 
-    function handleNextBtnMouseEnter () {
-        $('.next-btn-arrow-js').removeClass('on-mouse-out');
-        $('.next-btn-arrow-js').addClass('on-mouse-in');
+    function handleNextBtnMouseEnter (e) {
+        // $('.next-btn-arrow-js').removeClass('on-mouse-out');
+        // $('.next-btn-arrow-js').addClass('on-mouse-in');
+        $(e.currentTarget).find('.next-btn-arrow-js').removeClass('on-mouse-out');
+        $(e.currentTarget).find('.next-btn-arrow-js').addClass('on-mouse-in');
     }
 
-    function handleNextBtnMouseLeave () {
-        $('.next-btn-arrow-js').removeClass('on-mouse-in');
-        $('.next-btn-arrow-js').addClass('on-mouse-out');
+    function handleNextBtnMouseLeave (e) {
+        // $('.next-btn-arrow-js').removeClass('on-mouse-in');
+        // $('.next-btn-arrow-js').addClass('on-mouse-out');
+        $(e.currentTarget).find('.next-btn-arrow-js').removeClass('on-mouse-in');
+        $(e.currentTarget).find('.next-btn-arrow-js').addClass('on-mouse-out');
     }
 
     function handleSlideChange () {

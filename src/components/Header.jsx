@@ -81,14 +81,18 @@ function Header () {
         }
     }
 
-    function handleContactLinkMouseEnter () {
-        $('.contact-us-arrow').removeClass('on-mouse-out');
-        $('.contact-us-arrow').addClass('on-mouse-in');
+    function handleContactLinkMouseEnter (e) {
+        // $('.contact-us-arrow').removeClass('on-mouse-out');
+        // $('.contact-us-arrow').addClass('on-mouse-in');
+        $(e.currentTarget).find('.contact-us-arrow').removeClass('on-mouse-out');
+        $(e.currentTarget).find('.contact-us-arrow').addClass('on-mouse-in');
     }
 
-    function handleContactLinkMouseLeave () {
-        $('.contact-us-arrow').removeClass('on-mouse-in');
-        $('.contact-us-arrow').addClass('on-mouse-out');
+    function handleContactLinkMouseLeave (e) {
+        // $('.contact-us-arrow').removeClass('on-mouse-in');
+        // $('.contact-us-arrow').addClass('on-mouse-out');
+        $(e.currentTarget).find('.contact-us-arrow').removeClass('on-mouse-in');
+        $(e.currentTarget).find('.contact-us-arrow').addClass('on-mouse-out');
     }
 
     return (

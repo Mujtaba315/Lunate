@@ -3,14 +3,18 @@ import $ from 'jquery';
 
 function Intro () {
 
-    function handleExploreLinkMouseEnter () {
-        $('.explore-link-arrow-js').removeClass('on-mouse-out');
-        $('.explore-link-arrow-js').addClass('on-mouse-in');
+    function handleExploreLinkMouseEnter (e) {
+        // $('.explore-link-arrow-js').removeClass('on-mouse-out');
+        // $('.explore-link-arrow-js').addClass('on-mouse-in');
+        $(e.currentTarget).find('.explore-link-arrow-js').removeClass('on-mouse-out');
+        $(e.currentTarget).find('.explore-link-arrow-js').addClass('on-mouse-in');
     }
 
-    function handleExploreLinkMouseLeave () {
-        $('.explore-link-arrow-js').removeClass('on-mouse-in');
-        $('.explore-link-arrow-js').addClass('on-mouse-out');
+    function handleExploreLinkMouseLeave (e) {
+        // $('.explore-link-arrow-js').removeClass('on-mouse-in');
+        // $('.explore-link-arrow-js').addClass('on-mouse-out');
+        $(e.currentTarget).find('.explore-link-arrow-js').removeClass('on-mouse-in');
+        $(e.currentTarget).find('.explore-link-arrow-js').addClass('on-mouse-out');
     }
 
     return (
