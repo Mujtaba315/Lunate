@@ -8,24 +8,33 @@ import news_4 from '../assets/images/news_4.png';
 
 function News () {
 
-    function handleViewAllLinkMouseEnter () {
-        $('.view-all-link-arrow-js').removeClass('on-mouse-out');
-        $('.view-all-link-arrow-js').addClass('on-mouse-in');
+    function handleViewAllLinkMouseEnter (e) {
+        // $('.view-all-link-arrow-js').removeClass('on-mouse-out');
+        // $('.view-all-link-arrow-js').addClass('on-mouse-in');
+        $(e.currentTarget).find('.view-all-link-arrow-js').removeClass('on-mouse-out');
+        $(e.currentTarget).find('.view-all-link-arrow-js').addClass('on-mouse-in');
     }
 
-    function handleViewAllLinkMouseLeave () {
-        $('.view-all-link-arrow-js').removeClass('on-mouse-in');
-        $('.view-all-link-arrow-js').addClass('on-mouse-out');
+    function handleViewAllLinkMouseLeave (e) {
+        // $('.view-all-link-arrow-js').removeClass('on-mouse-in');
+        // $('.view-all-link-arrow-js').addClass('on-mouse-out');
+        $(e.currentTarget).find('.view-all-link-arrow-js').removeClass('on-mouse-in');
+        $(e.currentTarget).find('.view-all-link-arrow-js').addClass('on-mouse-out');
     }
 
-    function handleReadMoreLinkMouseEnter () {
-        $('.read-more-link-arrow-js').removeClass('on-mouse-out');
-        $('.read-more-link-arrow-js').addClass('on-mouse-in');
+    function handleReadMoreLinkMouseEnter (e) {
+        // $('.read-more-link-arrow-js').removeClass('on-mouse-out');
+        // $('.read-more-link-arrow-js').addClass('on-mouse-in');
+        $(e.currentTarget).find('.read-more-link-arrow-js').removeClass('on-mouse-out');
+        $(e.currentTarget).find('.read-more-link-arrow-js').addClass('on-mouse-in');
+        
     }
 
-    function handleReadMoreLinkMouseLeave () {
-        $('.read-more-link-arrow-js').removeClass('on-mouse-in');
-        $('.read-more-link-arrow-js').addClass('on-mouse-out');
+    function handleReadMoreLinkMouseLeave (e) {
+        // $('.read-more-link-arrow-js').removeClass('on-mouse-in');
+        // $('.read-more-link-arrow-js').addClass('on-mouse-out');
+        $(e.currentTarget).find('.read-more-link-arrow-js').removeClass('on-mouse-in');
+        $(e.currentTarget).find('.read-more-link-arrow-js').addClass('on-mouse-out');
     }
 
     return (
