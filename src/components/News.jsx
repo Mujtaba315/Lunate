@@ -80,8 +80,8 @@ function News () {
                         </div>
                     </div>
                 </div>
-                <div className="side-news">
-                    <div className="side-news-1">
+                <div className="side-news-wrapper">
+                    <div className="side-news">
                         <div className="side-news-image">
                             <img src={news_2} alt="news 2 image" />
                         </div>
@@ -106,7 +106,7 @@ function News () {
                         </div>
                     </div>
 
-                    <div className="side-news-2">
+                    <div className="side-news">
                         <div className="side-news-image">
                             <img src={news_3} alt="news 3 image" />
                         </div>
@@ -131,7 +131,7 @@ function News () {
                         </div>
                     </div>
 
-                    <div className="side-news-3">
+                    <div className="side-news">
                         <div className="side-news-image">
                             <img src={news_4} alt="news 4 image" />
                         </div>

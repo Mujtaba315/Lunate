@@ -219,15 +219,17 @@
             }
         }
 
-        .side-news {
+        .side-news-wrapper {
             max-width: 47.675%;
 
-            .side-news-1, 
-            .side-news-2,
-            .side-news-3 {
+            .side-news {
                 display: flex;
                 column-gap: 1.875rem;
                 margin-bottom: 3.75rem;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
 
                 .side-news-image {
                     display: flex;

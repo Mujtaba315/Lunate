@@ -1,0 +1,43 @@
+.signup-sec-wrapper {
+    color: #453D43;
+    font-family: 'Space Grotesk', Times, serif;
+    display: flex;
+    column-gap: 5rem;
+
+    .image-wrapper {
+        flex: 0 0 12.791%;
+        max-width: 12.791%;
+        max-height: 13.962rem;
+
+        .pattern-image {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .titles-wrapper {
+        flex: 0 0 30.231%;
+        max-width: 30.231%;
+        font-weight: 700;
+        border-top: .06rem solid #A68B5C;
+
+        .small-title-wrapper {
+
+            .small-title {
+                font-size: 1.5rem;
+                line-height: 1.275;
+                color: #A68B5C;
+                margin: 2.5rem 0;
+            }
+        }
+
+        .big-title-wrapper {
+
+            .big-title {
+                font-size: 2.5rem;
+                line-height: 1.25;
+                margin: 0;
+            }
+        }
+    }
+}

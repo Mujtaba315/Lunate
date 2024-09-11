@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Intro from './components/Intro';
 import Slider from './components/Slider';
 import News from './components/News';
+import LastSec from './components/LastSec';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Intro />
       <Slider />
       <News />
+      <LastSec />
     </>
   );
 }
