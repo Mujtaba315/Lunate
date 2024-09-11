@@ -40,4 +40,106 @@
             }
         }
     }
+
+    .sign-up-form-wrapper {
+        flex: 0 0 47.675%;
+        max-width: 47.675%;
+
+        .fields-wrapper {
+            display: flex;
+            gap: 1.25rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.875rem;
+
+            .field-input-wrapper {
+                flex: 0 0 48.769%;
+                max-width: 48.769%;
+
+                .field-input {
+                    background: #fff;
+                    width: 100%;
+                    border-radius: 3.75rem;
+                    border: none;
+                    outline: none;
+                    padding: 1.475rem 1.875rem;
+                    // padding: 1.469rem 1.875rem;
+                    font-family: 'Varela', Times, serif;
+                    font-size: 1rem;
+                    line-height: 1.3;
+                    color: #A8A1A3;
+
+                    &::placeholder {
+                        font-family: 'Varela', Times, serif;
+                        font-size: 1rem;
+                        line-height: 1.3 !important;
+                        color: #A8A1A3;
+                    }
+                }
+            }
+        }
+
+        .checkbox-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.25rem;
+
+            .wrapper-label {
+                font-size: 1.125rem;
+                font-weight: 500;
+                color: #A68B5C;
+                line-height: 1.276;
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+
+            .checkbox {
+                flex: 0 0 max-content;
+                max-width: max-content;
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                .checkbox-input {
+                    position: absolute;
+                    opacity: 0;
+                    height: 0;
+                    width: 0;
+
+                    &:checked ~ .custom-checkbox {
+
+                       
+                            // background: #fff;
+                            // border-color: #fff;
+
+                            &::after {
+                                display: block;
+                            
+                        }
+                    }
+                }
+
+                .custom-checkbox {
+                    height: 1.25rem;
+                    width: 1.25rem;
+                    border: .06rem solid #9A9194;
+                    display: inline-block;
+                    // position: absolute;
+                    // top: 0;
+                    // left: 0;
+
+                    &::after {
+                        position: absolute;
+                        content: url('../../assets/images/checkbox_tick.png');
+                        display: none;
+                    }
+                }
+
+                .checkbox-label {
+                    font-size: 1rem;
+                    line-height: 1.276;
+                    margin-left: 0.75rem;
+                }
+            }
+        }
+    }
 }

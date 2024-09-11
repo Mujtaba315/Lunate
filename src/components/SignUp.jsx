@@ -19,6 +19,59 @@ function SignUp () {
                     </h2>
                 </div>
             </div>
+
+            <form className="sign-up-form-wrapper">
+                <div className="fields-wrapper">
+                    <div className="field-input-wrapper">
+                        <input type="text" className="field-input" placeholder='First Name' required/>
+                    </div>
+                    <div className="field-input-wrapper">
+                        <input type="text" className="field-input" placeholder='Last Name' required/>
+                    </div>
+                    <div className="field-input-wrapper">
+                        <input type="email" className="field-input" placeholder='Email' required/>
+                    </div>
+                    <div className="field-input-wrapper">
+                        <input type="text" className="field-input" placeholder='Company' required/>
+                    </div>
+                </div>
+
+                <div className="checkbox-wrapper">
+                    <div className="wrapper-label">
+                        <label>I wish to subscribe to the following communications:</label>
+                    </div>
+                    <div className="checkbox">
+                        <input type="checkbox" className='checkbox-input'/>
+                        <span className="custom-checkbox"></span>
+                        <label className="checkbox-label">Corporate News</label>
+                    </div>
+                    <div className="checkbox">
+                        <input type="checkbox" className='checkbox-input'/>
+                        <span className="custom-checkbox"></span>
+                        <label className="checkbox-label">Monthly ETF Performance Review</label>
+                    </div>
+                    <div className="checkbox">
+                        <input type="checkbox" className='checkbox-input'/>
+                        <span className="custom-checkbox"></span>
+                        <label className="checkbox-label">ETF Launches & Announcements</label>
+                    </div>
+                    <div className="checkbox">
+                        <input type="checkbox" className='checkbox-input'/>
+                        <span className="custom-checkbox"></span>
+                        <label className="checkbox-label">Private Product Launches & Announcements</label>
+                    </div>
+                    <div className="checkbox">
+                        <input type="checkbox" className='checkbox-input'/>
+                        <span className="custom-checkbox"></span>
+                        <label className="checkbox-label">Events & Webinars</label>
+                    </div>
+                    <div className="checkbox">
+                        <input type="checkbox" className='checkbox-input'/>
+                        <span className="custom-checkbox"></span>
+                        <label className="checkbox-label">To All Email Communications</label>
+                    </div>
+                </div>
+            </form>
         </div>
     );
 }
