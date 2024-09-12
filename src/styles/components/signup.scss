@@ -82,6 +82,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 1.25rem;
+            margin-bottom: 2.5rem;
 
             .wrapper-label {
                 font-size: 1.125rem;
@@ -154,6 +155,97 @@
                     line-height: 1.276;
                     padding-left: 2rem;
                     letter-spacing: -.018rem;
+                }
+            }
+        }
+
+        .cta-wrapper {
+            display: flex;
+            justify-content: space-between;
+
+            .description-wrapper {
+                flex: 0 0 63.415%;
+                max-width: 63.415%;
+
+                .description {
+                    margin: 0;
+                    font-family: 'Varela', Times, serif;
+                    font-size: .875rem;
+                    line-height: 1.571;
+                }
+            }
+
+            .submit-btn-wrapper {
+
+                .submit-btn {
+                    background: none;
+                    outline: none;
+                    border: .06rem solid;
+                    border-radius: 3.75rem;
+                    padding: 1.375rem 2rem;
+                    display: flex;
+                    align-items: center;
+                    column-gap: .625rem;
+                    font-size: 1.125rem;
+                    font-weight: 500;
+                    line-height: 1.276;
+                    color: #453D43;
+                    font-family: 'Space Grotesk', Times, serif;
+                    cursor: pointer;
+
+                    .submit-arrow-span {
+                        display: flex;
+                        overflow: hidden;
+                        align-items: center;
+                        justify-content: center;
+
+                        .submit-arrow {
+                            fill: #453D43;
+
+                            &.on-mouse-in {
+                                animation-name: animateArrow;
+                                animation-duration: .3s;
+                                animation-iteration-count: 1;
+    
+                            }
+    
+                            @keyframes animateArrow {
+                                0% {
+                                    transform: translateX(0);
+                                }
+                                50% {
+                                    transform: translateX(60%);
+                                }
+                                51% {
+                                    transform: translateX(-60%);
+                                }
+                                100% {
+                                    transform: translateX(0);
+                                }
+                            }
+    
+                            &.on-mouse-out {
+                                animation-name: reverseAnimateArrow;
+                                animation-duration: .3s;
+                                animation-iteration-count: 1;
+                            }
+    
+                            @keyframes reverseAnimateArrow {
+                                0% {
+                                    transform: translateX(0);
+                                }
+                                50% {
+                                    transform: translateX(-60%);
+                                }
+                                51% {
+                                    transform: translateX(60%);
+                                }
+                                100% {
+                                    transform: translateX(0);
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
