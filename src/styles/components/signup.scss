@@ -98,23 +98,26 @@
                 display: flex;
                 align-items: center;
                 position: relative;
+                // cursor: pointer;
 
                 .checkbox-input {
-                    // position: absolute;
-                    // opacity: 0;
-                    height: 0;
-                    width: 0;
+                    position: absolute;
+                    opacity: 0;
+                    height: 100%;
+                    width: 100%;
                     margin: 0;
+                    z-index: 1;
+                    cursor: pointer;
 
-                    &:checked ~ .custom-checkbox {
-
-                       
-                            // background: #fff;
-                            // border-color: #fff;
+                    &:checked {
+                        &~ .custom-checkbox {
+                            background: #fff;
+                            border-color: #fff;
 
                             &::after {
                                 display: block;
                             
+                            }
                         }
                     }
                 }
@@ -123,22 +126,34 @@
                     height: 1.25rem;
                     width: 1.25rem;
                     border: .06rem solid #9A9194;
-                    // display: inline-block;
                     position: absolute;
+                    // display: inline-block;
                     // top: 0;
                     // left: 0;
 
                     &::after {
                         position: absolute;
-                        content: url('../../assets/images/checkbox_tick.png');
+                        // content: url('../../assets/images/checkbox_tick.png');
+                        content: '';
+                        background-image: url('../../assets/images/checkbox_tick.png');
+                        background-size: 1rem .8rem;
+                        background-repeat: no-repeat;
+                        background-position: center;
                         display: none;
+                        height: 100%;
+                        width: 1.25rem;
+                        /* align-items: center; */
+                        /* justify-content: center; */
+                        /* margin-top: 0.07rem; */
+                        margin-left: -0.05rem;
                     }
                 }
 
                 .checkbox-label {
                     font-size: 1rem;
                     line-height: 1.276;
-                    padding-left: 1.75rem;
+                    padding-left: 2rem;
+                    letter-spacing: -.018rem;
                 }
             }
         }
