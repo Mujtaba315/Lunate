@@ -118,10 +118,54 @@
     .copyright-footer {
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
         .social-links-sec {
             display: flex;
             column-gap: 1.25rem;
+
+            .social-link-wrapper {
+                display: flex;
+                border: .06rem solid;
+                border-radius: 50%;
+
+                &:hover {
+                    color: #A68B5C;
+                    cursor: pointer;
+
+                    .social-link {
+
+                        path {
+                            fill: #A68B5C;
+                        }
+                    }
+                }
+
+                .social-link {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 1.094rem;
+
+                    svg {
+                        height: 1.563rem;
+                        width: 1.563rem;
+                    }
+                }
+            }
+        }
+
+        .copyright-text-sec {
+            
+            .copyright-text-wrapper {
+
+                .copyright-text {
+                    margin: 0;
+                    font-family: 'Varela', Times, serif;
+                    font-size: .875rem;
+                    line-height: 1.429;
+                }
+            }
         }
     }
 }
