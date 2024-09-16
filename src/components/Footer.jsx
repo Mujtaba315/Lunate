@@ -21,91 +21,115 @@ function Footer () {
                     <div className="links-columns-wrapper">
                         <ul className='links-col'>
                             <li className='links-col-title'>About Lunate</li>
-                            <li className='link'>
-                                <span className="link-arrow-span">
-                                    <svg className='link-arrow' width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9.02344 18.1202L15.0234 12.1202L9.02344 6.12024" stroke="#453D43" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </span>
-                                <span className="link-text">Who we are</span>
+                            <li className='link-wrapper'>
+                                <a href="#" className="link">
+                                    <span className="link-arrow-span">
+                                        <svg className='link-arrow' width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.02344 18.1202L15.0234 12.1202L9.02344 6.12024" stroke="#453D43" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <span className="link-text">Who we are</span>
+                                </a>
                             </li>
-                            <li className='link'>
-                                <span className="link-arrow-span">
-                                    <svg className='link-arrow' width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9.02344 18.1202L15.0234 12.1202L9.02344 6.12024" stroke="#453D43" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </span>
-                                <span className="link-text">Our team</span>
+                            <li className='link-wrapper'>
+                                <a href="#" className="link">                                    
+                                    <span className="link-arrow-span">
+                                        <svg className='link-arrow' width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.02344 18.1202L15.0234 12.1202L9.02344 6.12024" stroke="#453D43" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <span className="link-text">Our team</span>
+                                </a>
                             </li>
                         </ul>
 
                         <ul className='links-col'>
                             <li className='links-col-title'>Our Approach</li>
-                            <li className='link'>
-                                <span className="link-arrow-span">
-                                    <svg className='link-arrow' width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9.02344 18.1202L15.0234 12.1202L9.02344 6.12024" stroke="#453D43" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </span>
-                                <span className="link-text">Asset classes</span>
+                            <li className='link-wrapper'>
+                                <a href="#" className="link">                                    
+                                    <span className="link-arrow-span">
+                                        <svg className='link-arrow' width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.02344 18.1202L15.0234 12.1202L9.02344 6.12024" stroke="#453D43" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <span className="link-text">Asset classes</span>
+                                </a>
                             </li>
-                            <li className='link'>
-                                <span className="link-arrow-span">
-                                    <svg className='link-arrow' width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9.02344 18.1202L15.0234 12.1202L9.02344 6.12024" stroke="#453D43" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </span>
-                                <span className="link-text">Investment strategies</span>
+                            <li className='link-wrapper'>
+                                <a href="#" className="link">                                    
+                                    <span className="link-arrow-span">
+                                        <svg className='link-arrow' width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.02344 18.1202L15.0234 12.1202L9.02344 6.12024" stroke="#453D43" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <span className="link-text">Investment strategies</span>
+                                </a>
                             </li>
-                            <li className='link'>
-                                <span className="link-arrow-span">
-                                    <svg className='link-arrow' width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9.02344 18.1202L15.0234 12.1202L9.02344 6.12024" stroke="#453D43" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </span>
-                                <span className="link-text">Solutions & products</span>
+                            <li className='link-wrapper'>
+                                <a href="#" className="link">                                    
+                                    <span className="link-arrow-span">
+                                        <svg className='link-arrow' width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.02344 18.1202L15.0234 12.1202L9.02344 6.12024" stroke="#453D43" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <span className="link-text">Solutions & products</span>
+                                </a>
                             </li>
                         </ul>
 
                         <ul className='links-col'>
                             <li className='links-col-title'>News & Insights</li>
-                            <li className='link'>
-                                <span className="link-arrow-span">
-                                    <svg className='link-arrow' width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9.02344 18.1202L15.0234 12.1202L9.02344 6.12024" stroke="#453D43" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </span>
-                                <span className="link-text">Careers</span>
+                            <li className='link-wrapper'>
+                                <a href="#" className="link">                                    
+                                    <span className="link-arrow-span">
+                                        <svg className='link-arrow' width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.02344 18.1202L15.0234 12.1202L9.02344 6.12024" stroke="#453D43" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <span className="link-text">Careers</span>
+                                </a>
                             </li>
-                            <li className='link'>
-                                <span className="link-arrow-span">
-                                    <svg className='link-arrow' width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9.02344 18.1202L15.0234 12.1202L9.02344 6.12024" stroke="#453D43" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </span>
-                                <span className="link-text">Contact us</span>
+                            <li className='link-wrapper'>
+                                <a href="#" className="link">
+                                    <span className="link-arrow-span">
+                                        <svg className='link-arrow' width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.02344 18.1202L15.0234 12.1202L9.02344 6.12024" stroke="#453D43" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <span className="link-text">Contact us</span>
+                                </a>
                             </li>
-                            <li className='link'>
-                                <span className="link-arrow-span">
-                                    <svg className='link-arrow' width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9.02344 18.1202L15.0234 12.1202L9.02344 6.12024" stroke="#453D43" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </span>
-                                <span className="link-text">Privacy policy</span>
+                            <li className='link-wrapper'>
+                                <a href="#" className="link">                                    
+                                    <span className="link-arrow-span">
+                                        <svg className='link-arrow' width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.02344 18.1202L15.0234 12.1202L9.02344 6.12024" stroke="#453D43" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <span className="link-text">Privacy policy</span>
+                                </a>
                             </li>
-                            <li className='link'>
-                                <span className="link-arrow-span">
-                                    <svg className='link-arrow' width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9.02344 18.1202L15.0234 12.1202L9.02344 6.12024" stroke="#453D43" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </span>
-                                <span className="link-text">Term of use</span>
+                            <li className='link-wrapper'>
+                                <a href="#" className='link'>
+                                    <span className="link-arrow-span">
+                                        <svg className='link-arrow' width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.02344 18.1202L15.0234 12.1202L9.02344 6.12024" stroke="#453D43" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <span className="link-text">Term of use</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div className="copyright-footer"></div>
+            <div className="copyright-footer">
+                <div className="social-links-sec">
+                    <div className="social-link-wrapper">
+                        
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }

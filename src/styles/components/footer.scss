@@ -56,31 +56,59 @@
                         margin-bottom: 3.75rem;
                     }
 
-                    .link {
-                        display: flex;
-                        align-items: center;
-                        column-gap: .625rem;
+                    .link-wrapper {
+                        max-width: max-content;
 
                         &:not(:last-of-type) {
                             margin-bottom: 2.5rem;
                         }
 
-                        .link-arrow-span {
+                        .link {
                             display: flex;
                             align-items: center;
-                            justify-content: center;
+                            column-gap: .625rem;
+                            text-decoration: none;
+                            color: inherit;
 
-                            .link-arrow {
-                                width: 1.5rem;
-                                height: 1.5rem;
+                            &:hover {
+                                cursor: pointer;
+    
+                                .link-arrow-span {
+    
+                                    .link-arrow {
+                                        
+                                        path {
+                                            stroke: #A68B5C;
+                                        }
+                                    }
+                                }
+    
+                                .link-text {
+                                    color: #A68B5C;
+                                    transform: translateX(.375rem);
+                                    transition: all .3s ease-in-out;
+                                }
+                            }
+    
+                            .link-arrow-span {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+    
+                                .link-arrow {
+                                    width: 1.5rem;
+                                    height: 1.5rem;
+                                }
+                            }
+    
+                            .link-text {
+                                font-size: 1.125rem;
+                                font-weight: 500;
+                                line-height: 1.276;
+                                transition: all .3s ease-in-out;
                             }
                         }
 
-                        .link-text {
-                            font-size: 1.125rem;
-                            font-weight: 500;
-                            line-height: 1.276;
-                        }
                     }
                 }
             }
