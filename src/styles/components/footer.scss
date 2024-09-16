@@ -114,4 +114,14 @@
             }
         }
     }
+
+    .copyright-footer {
+        display: flex;
+        justify-content: space-between;
+
+        .social-links-sec {
+            display: flex;
+            column-gap: 1.25rem;
+        }
+    }
 }
