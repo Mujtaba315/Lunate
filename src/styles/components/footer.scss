@@ -1,5 +1,6 @@
 .footer-sec {
     color: #453D43;
+    font-family: 'Space Grotesk', Times, serif;
 
     .main-footer-wrapper {
         padding: 5rem 0;
@@ -30,6 +31,57 @@
                     font-size: .875rem;
                     line-height: 1.571;
                     margin: 0;
+                }
+            }
+        }
+
+        .links-wrapper {
+            flex: 0 0 47.733%;
+            max-width: 47.733%;
+
+            .links-columns-wrapper {
+                display: flex;
+                justify-content: space-between;
+                
+                .links-col {
+                    min-width: 26.797%;
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+
+                    .links-col-title {
+                        font-weight: 700;
+                        font-size: 1.5rem;
+                        line-height: 1.276;
+                        margin-bottom: 3.75rem;
+                    }
+
+                    .link {
+                        display: flex;
+                        align-items: center;
+                        column-gap: .625rem;
+
+                        &:not(:last-of-type) {
+                            margin-bottom: 2.5rem;
+                        }
+
+                        .link-arrow-span {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .link-arrow {
+                                width: 1.5rem;
+                                height: 1.5rem;
+                            }
+                        }
+
+                        .link-text {
+                            font-size: 1.125rem;
+                            font-weight: 500;
+                            line-height: 1.276;
+                        }
+                    }
                 }
             }
         }
