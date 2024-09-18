@@ -13,6 +13,11 @@
         @media screen and (max-width:1024px) {
             margin-bottom: 3.125rem;
             padding: 6.25rem 0;
+
+            @media screen and (max-width:600px) {
+                margin-bottom: 12.214rem;
+                padding: 12.214rem 0;
+            }
         }
 
         .description-wrapper {
@@ -36,6 +41,10 @@
                     margin-bottom: 4.6875rem;
                 }
 
+                @media screen and (max-width:600px) {
+                    margin-bottom: 12.214rem;
+                }
+
                 .footer-logo {
                     fill: #000000;
                     max-width: 11.25rem;
@@ -44,6 +53,11 @@
                     @media screen and (max-width:1024px) {
                         max-width: 18.755rem;
                         max-height: 5rem;
+                    }
+
+                    @media screen and (max-width:600px) {
+                        max-width: 50.1rem;
+                        max-height: 14rem;
                     }
                 }
             }
@@ -58,6 +72,10 @@
 
                     @media screen and (max-width:1024px) {
                         font-size: 1.875rem;
+                    }
+
+                    @media screen and (max-width:600px) {
+                        font-size: 3.665rem;
                     }
                 }
             }
