@@ -10,6 +10,11 @@
         display: flex;
         justify-content: space-between;
 
+        @media screen and (max-width:1024px) {
+            margin-bottom: 3.125rem;
+            padding: 6.25rem 0;
+        }
+
         .description-wrapper {
             flex: 0 0 38.953%;
             max-width: 38.953%;
@@ -20,8 +25,16 @@
                 text-align: center;
             }
 
+            @media screen and (max-width:600px) {
+                text-align: left;
+            }
+
             .footer-logo-wrapper {
                 margin-bottom: 3.75rem;
+
+                @media screen and (max-width:1024px) {
+                    margin-bottom: 4.6875rem;
+                }
 
                 .footer-logo {
                     fill: #000000;
@@ -143,6 +156,10 @@
             display: flex;
             column-gap: 1.25rem;
 
+            @media screen and (max-width:1024px) {
+                column-gap: 2.5rem;
+            }
+
             .social-link-wrapper {
                 display: flex;
                 border: .06rem solid;
@@ -166,9 +183,18 @@
                     justify-content: center;
                     padding: 1.094rem;
 
+                    @media screen and (max-width:1024px) {
+                        padding: 1.641rem;
+                    }
+
                     svg {
                         height: 1.563rem;
                         width: 1.563rem;
+
+                        @media screen and (max-width:1024px) {
+                            height: 2.344rem;
+                            width: 2.344rem;
+                        }
                     }
                 }
             }
@@ -183,6 +209,10 @@
                     font-family: 'Varela', Times, serif;
                     font-size: .875rem;
                     line-height: 1.429;
+
+                    @media screen and (max-width:1024px) {
+                        font-size: 1.563rem;
+                    }
                 }
             }
         }
