@@ -14,6 +14,12 @@
             flex: 0 0 38.953%;
             max-width: 38.953%;
 
+            @media screen and (max-width:1024px) {
+                flex: 0 0 100%;
+                max-width: 100%;
+                text-align: center;
+            }
+
             .footer-logo-wrapper {
                 margin-bottom: 3.75rem;
 
@@ -21,6 +27,11 @@
                     fill: #000000;
                     max-width: 11.25rem;
                     max-height: 2.5rem;
+
+                    @media screen and (max-width:1024px) {
+                        max-width: 18.755rem;
+                        max-height: 5rem;
+                    }
                 }
             }
 
@@ -31,6 +42,10 @@
                     font-size: .875rem;
                     line-height: 1.571;
                     margin: 0;
+
+                    @media screen and (max-width:1024px) {
+                        font-size: 1.875rem;
+                    }
                 }
             }
         }
@@ -38,6 +53,10 @@
         .links-wrapper {
             flex: 0 0 47.733%;
             max-width: 47.733%;
+
+            @media screen and (max-width:1024px) {
+                display: none;
+            }
 
             .links-columns-wrapper {
                 display: flex;
