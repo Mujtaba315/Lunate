@@ -1,14 +1,26 @@
 .news {
     padding: 10rem 6.25rem;
 
+    @media screen and (max-width:1024px) {
+        padding: 12.5rem 3.75rem;
+    }
+
     .upper-sec {
         margin-bottom: 7.5rem;
         display: flex;
         justify-content: space-between;
 
+        @media screen and (max-width:1024px) {
+            margin-bottom: 6.25rem;
+        }
+
         .title-sec {
             max-width: 47.675%;
             border-top: .06rem solid #A68B5C;
+
+            @media screen and (max-width:1024px) {
+                max-width: 48.612%;
+            }
 
             .small-heading {
                 color: #A68B5C;
@@ -17,6 +29,11 @@
                 font-size: 1.5rem;
                 line-height: 1.275;
                 margin: 2.5rem 0;
+
+                @media screen and (max-width:1024px) {
+                    font-size: 2.5rem;
+                    margin: 3.125rem 0;
+                }
             }
 
             .big-heading {
@@ -25,6 +42,10 @@
                 font-size: 3.375rem;
                 line-height: 1.275;
                 margin: 0;
+
+                @media screen and (max-width:1024px) {
+                    font-size: 3.438rem;
+                }
             }
         }
 
@@ -43,14 +64,29 @@
                 line-height: 1.436rem;
                 display: flex;
                 max-width: max-content;
+
+                @media screen and (max-width:1024px) {
+                    font-size: 1.875rem;
+                    align-items: center;
+                    padding: 1.641rem 2.188rem;
+                }
     
                 .view-all-link-span{
                     margin-left: .625rem;
                     overflow: hidden;
+
+                    @media screen and (max-width:1024px) {
+                        margin-left: 0.938rem;
+                    }
     
                     .view-all-link-arrow {
                         margin-bottom: -.125rem;
                         fill: #A68B5C;
+
+                        @media screen and (max-width:1024px) {
+                            height: 1.797rem;
+                            width: 1.797rem;
+                        }
     
                         &.on-mouse-in {
                             animation-name: animateArrow;
@@ -108,6 +144,10 @@
         .main-news {
             max-width: 47.675%;
 
+            @media screen and (max-width:1024px) {
+                max-width: 48.438%;
+            }
+
             .news-image {
                 display: flex;
 
@@ -133,6 +173,11 @@
                     font-size: 1rem;
                     line-height: 1.276;
 
+                    @media screen and (max-width:1024px) {
+                        padding: 1.563rem 0 2.188rem;
+                        font-size: 1.563rem;
+                    }
+
                     .category {
                         color: #A68B5C;
                     }
@@ -147,6 +192,11 @@
                     font-weight: 400;
                     line-height: 1.276;
                     padding-bottom: 2.5rem;
+
+                    @media screen and (max-width:1024px) {
+                        font-size: 2.188rem;
+                        padding-bottom: 2.188rem;
+                    }
                 }
 
                 .read-more {
@@ -161,6 +211,11 @@
                         color: #453D43;
                         max-width: max-content;
 
+                        @media screen and (max-width:1024px) {
+                            font-size: 1.875rem;
+                            column-gap: 0.938rem;
+                        }
+
                         .read-more-link-span {
                             display: flex;
                             overflow: hidden;
@@ -169,6 +224,11 @@
 
                             .read-more-link-arrow {
                                 fill: #453D43;
+
+                                @media screen and (max-width:1024px) {
+                                    height: 1.563rem;
+                                    width: 1.563rem;
+                                }
 
                                 &.on-mouse-in {
                                     animation-name: animateArrow;
@@ -221,6 +281,10 @@
 
         .side-news-wrapper {
             max-width: 47.675%;
+
+            @media screen and (max-width:1024px) {
+                max-width: 48.438%;
+            }
 
             .side-news {
                 display: flex;
