@@ -12,6 +12,7 @@
 
     @media screen and (max-width:600px) {
         flex-direction: column;
+        margin-bottom: 18.321rem;
     }
 
     .image-wrapper {
@@ -197,6 +198,11 @@
                 column-gap: 1.563rem;
             }
 
+            @media screen and (max-width:600px) {
+                row-gap: 5.496rem;
+                margin-bottom: 9.161rem;
+            }
+
             .wrapper-label {
                 font-size: 1.125rem;
                 font-weight: 500;
@@ -209,6 +215,12 @@
                     font-size: 2.187rem;
                     letter-spacing: -.03rem;
                 }
+
+                @media screen and (max-width:600px) {
+                    font-size: 5.496rem;
+                    letter-spacing: 0;
+                    margin-bottom: 0.611rem;
+                }
             }
 
             .checkbox {
@@ -218,6 +230,10 @@
                 align-items: center;
                 position: relative;
                 // cursor: pointer;
+
+                @media screen and (max-width:600px) {
+                    width: 100%;
+                }
 
                 .checkbox-input {
                     position: absolute;
@@ -255,6 +271,11 @@
                         width: 2.5rem;
                     }
 
+                    @media screen and (max-width:600px) {
+                        height: 6.107rem;
+                        width: 6.107rem;
+                    }
+
                     &::after {
                         position: absolute;
                         // content: url('../../assets/images/checkbox_tick.png');
@@ -276,6 +297,11 @@
                             width: 2.5rem;
                             margin-left: -0.1rem;
                         }
+
+                        @media screen and (max-width:600px) {
+                            background-size: 5rem 3.7rem;
+                            width: 6.107rem;
+                        }
                     }
                 }
 
@@ -289,6 +315,12 @@
                         padding-left: 4.063rem;
                         font-size: 1.875rem;
                     }
+
+                    @media screen and (max-width:600px) {
+                        padding-left: 9.161rem;
+                        font-size: 4.885rem;
+                        letter-spacing: -.155rem;
+                    }
                 }
             }
         }
@@ -300,6 +332,10 @@
             @media screen and (max-width:1024px) {
                 flex-direction: column;
                 row-gap: 3.125rem;
+            }
+
+            @media screen and (max-width:600px) {
+                row-gap: 12.214rem;
             }
 
             .description-wrapper {
@@ -319,6 +355,10 @@
 
                     @media screen and (max-width:1024px) {
                         font-size: 1.563rem;
+                    }
+
+                    @media screen and (max-width:600px) {
+                        font-size: 4.275rem;
                     }
                 }
             }
@@ -347,6 +387,15 @@
                         column-gap: 0.938rem;
                     }
 
+                    @media screen and (max-width:600px) {
+                        width: 100%;
+                        justify-content: center;
+                        column-gap: 3.054rem;
+                        font-size: 4.886rem;
+                        padding: 4.886rem 0;
+                        border-radius: 10rem;
+                    }
+
                     .submit-arrow-span {
                         display: flex;
                         overflow: hidden;
@@ -358,12 +407,22 @@
                             width: 2.813rem;
                         }
 
+                        @media screen and (max-width:600px) {
+                            height: 6.107rem;
+                            width: 6.107rem;
+                        }
+
                         .submit-arrow {
                             fill: #453D43;
 
                             @media screen and (max-width:1024px) {
                                 height: 1.797rem;
                                 width: 1.797rem;
+                            }
+
+                            @media screen and (max-width:600px) {
+                                height: 3.817rem;
+                                width: 3.817rem;
                             }
 
                             &.on-mouse-in {
