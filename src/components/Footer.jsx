@@ -180,7 +180,7 @@ function Footer () {
                 <div className="copyright-text-sec">
                     <div className="copyright-text-wrapper">
                         <p className="copyright-text">
-                        ⓒ Lunate <span className="copyright-year">2023</span>. All rights reserved.
+                        ⓒ Lunate <span className="copyright-year">2024</span>. All rights reserved.
                         </p>
                     </div>
                 </div>

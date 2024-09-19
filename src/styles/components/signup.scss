@@ -5,10 +5,21 @@
     column-gap: 5rem;
     margin-bottom: 5rem;
 
+    @media screen and (max-width:1024px) {
+        column-gap: 3.125rem;
+        margin-bottom: 6.25rem;
+    }
+
     .image-wrapper {
         flex: 0 0 12.791%;
         max-width: 12.791%;
         max-height: 13.962rem;
+
+        @media screen and (max-width:1024px) {
+            flex: 0 0 14.306%;
+            max-width: 14.306%;
+            max-height: 16.342rem;
+        }
 
         .pattern-image {
             width: 100%;
@@ -22,6 +33,11 @@
         font-weight: 700;
         border-top: .06rem solid #A68B5C;
 
+        @media screen and (max-width:1024px) {
+            flex: 0 0 31.528%;
+            max-width: 31.528%;
+        }
+
         .small-title-wrapper {
 
             .small-title {
@@ -29,6 +45,11 @@
                 line-height: 1.275;
                 color: #A68B5C;
                 margin: 2.5rem 0;
+
+                @media screen and (max-width:1024px) {
+                    font-size: 2.5rem;
+                    margin: 3.125rem 0;
+                }
             }
         }
 
@@ -38,6 +59,10 @@
                 font-size: 2.5rem;
                 line-height: 1.25;
                 margin: 0;
+
+                @media screen and (max-width:1024px) {
+                    font-size: 3.125rem;
+                }
             }
         }
     }
@@ -46,15 +71,30 @@
         flex: 0 0 47.675%;
         max-width: 47.675%;
 
+        @media screen and (max-width:1024px) {
+            flex: 0 0 48.611%;
+            max-width: 48.611%;
+        }
+
         .fields-wrapper {
             display: flex;
             gap: 1.25rem;
             flex-wrap: wrap;
             margin-bottom: 1.875rem;
 
+            @media screen and (max-width:1024px) {
+                gap: 1.563rem;
+                margin-bottom: 3.125rem;
+            }
+
             .field-input-wrapper {
                 flex: 0 0 48.769%;
                 max-width: 48.769%;
+
+                @media screen and (max-width:1024px) {
+                    flex: 0 0 48.571%;
+                    max-width: 48.571%;
+                }
 
                 .field-input {
                     background: #fff;
@@ -69,11 +109,20 @@
                     line-height: 1.3;
                     color: #A8A1A3;
 
+                    @media screen and (max-width:1024px) {
+                        padding: 1.797rem 2.188rem;
+                        font-size: 1.563rem;
+                    }
+
                     &::placeholder {
                         font-family: 'Varela', Times, serif;
                         font-size: 1rem;
                         line-height: 1.3 !important;
                         color: #A8A1A3;
+
+                        @media screen and (max-width:1024px) {
+                            font-size: 1.563rem;
+                        }
                     }
                 }
             }
@@ -85,6 +134,11 @@
             gap: 1.25rem;
             margin-bottom: 2.5rem;
 
+            @media screen and (max-width:1024px) {
+                row-gap: 2.5rem;
+                column-gap: 1.563rem;
+            }
+
             .wrapper-label {
                 font-size: 1.125rem;
                 font-weight: 500;
@@ -92,6 +146,11 @@
                 line-height: 1.276;
                 flex: 0 0 100%;
                 max-width: 100%;
+
+                @media screen and (max-width:1024px) {
+                    font-size: 2.187rem;
+                    letter-spacing: -.03rem;
+                }
             }
 
             .checkbox {
@@ -133,6 +192,11 @@
                     // top: 0;
                     // left: 0;
 
+                    @media screen and (max-width:1024px) {
+                        height: 2.5rem;
+                        width: 2.5rem;
+                    }
+
                     &::after {
                         position: absolute;
                         // content: url('../../assets/images/checkbox_tick.png');
@@ -148,6 +212,12 @@
                         /* justify-content: center; */
                         /* margin-top: 0.07rem; */
                         margin-left: -0.05rem;
+
+                        @media screen and (max-width:1024px) {
+                            background-size: 2rem 1.7rem;
+                            width: 2.5rem;
+                            margin-left: -0.1rem;
+                        }
                     }
                 }
 
@@ -156,6 +226,11 @@
                     line-height: 1.276;
                     padding-left: 2rem;
                     letter-spacing: -.018rem;
+
+                    @media screen and (max-width:1024px) {
+                        padding-left: 4.063rem;
+                        font-size: 1.875rem;
+                    }
                 }
             }
         }
@@ -164,15 +239,29 @@
             display: flex;
             justify-content: space-between;
 
+            @media screen and (max-width:1024px) {
+                flex-direction: column;
+                row-gap: 3.125rem;
+            }
+
             .description-wrapper {
                 flex: 0 0 63.415%;
                 max-width: 63.415%;
+
+                @media screen and (max-width:1024px) {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
 
                 .description {
                     margin: 0;
                     font-family: 'Varela', Times, serif;
                     font-size: .875rem;
                     line-height: 1.571;
+
+                    @media screen and (max-width:1024px) {
+                        font-size: 1.563rem;
+                    }
                 }
             }
 
@@ -194,14 +283,30 @@
                     font-family: 'Space Grotesk', Times, serif;
                     cursor: pointer;
 
+                    @media screen and (max-width:1024px) {
+                        font-size: 1.875rem;
+                        padding: 1.641rem 2.188rem;
+                        column-gap: 0.938rem;
+                    }
+
                     .submit-arrow-span {
                         display: flex;
                         overflow: hidden;
                         align-items: center;
                         justify-content: center;
 
+                        @media screen and (max-width:1024px) {
+                            height: 2.813rem;
+                            width: 2.813rem;
+                        }
+
                         .submit-arrow {
                             fill: #453D43;
+
+                            @media screen and (max-width:1024px) {
+                                height: 1.797rem;
+                                width: 1.797rem;
+                            }
 
                             &.on-mouse-in {
                                 animation-name: animateArrow;
