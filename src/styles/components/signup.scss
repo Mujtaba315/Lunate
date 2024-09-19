@@ -10,20 +10,36 @@
         margin-bottom: 6.25rem;
     }
 
+    @media screen and (max-width:600px) {
+        flex-direction: column;
+    }
+
     .image-wrapper {
         flex: 0 0 12.791%;
         max-width: 12.791%;
         max-height: 13.962rem;
 
+        
         @media screen and (max-width:1024px) {
             flex: 0 0 14.306%;
             max-width: 14.306%;
             max-height: 16.342rem;
         }
+        
+        @media screen and (max-width:600px) {
+            flex: 0 0 100%;
+            max-width: 100%;
+            max-height: 41.527rem;
+            margin-bottom: 12.214rem;
+        }
 
         .pattern-image {
             width: 100%;
             height: auto;
+
+            @media screen and (max-width:600px) {
+                width: 40.898rem;
+            }
         }
     }
 
@@ -38,6 +54,13 @@
             max-width: 31.528%;
         }
 
+        @media screen and (max-width:600px) {
+            flex: 0 0 100%;
+            max-width: 100%;
+            border-top-color: #A8A1A3;
+            margin-bottom: 9.161rem;
+        }
+
         .small-title-wrapper {
 
             .small-title {
@@ -49,6 +72,11 @@
                 @media screen and (max-width:1024px) {
                     font-size: 2.5rem;
                     margin: 3.125rem 0;
+                }
+
+                @media screen and (max-width:600px) {
+                    font-size: 6.107rem;
+                    margin: 6.107rem 0 12.214rem;
                 }
             }
         }
@@ -63,6 +91,11 @@
                 @media screen and (max-width:1024px) {
                     font-size: 3.125rem;
                 }
+
+                @media screen and (max-width:600px) {
+                    font-size: 10.382rem;
+                    letter-spacing: -.112rem;
+                }
             }
         }
     }
@@ -74,6 +107,11 @@
         @media screen and (max-width:1024px) {
             flex: 0 0 48.611%;
             max-width: 48.611%;
+        }
+
+        @media screen and (max-width:600px) {
+            flex: 0 0 100%;
+            max-width: 100%;
         }
 
         .fields-wrapper {
