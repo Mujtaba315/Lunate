@@ -170,12 +170,21 @@
         justify-content: space-between;
         align-items: center;
 
+        @media screen and (max-width:600px) {
+            flex-direction: column;
+            row-gap: 12.214rem;
+        }
+
         .social-links-sec {
             display: flex;
             column-gap: 1.25rem;
 
             @media screen and (max-width:1024px) {
                 column-gap: 2.5rem;
+            }
+
+            @media screen and (max-width:600px) {
+                column-gap: 6.107rem;
             }
 
             .social-link-wrapper {
@@ -205,6 +214,10 @@
                         padding: 1.641rem;
                     }
 
+                    @media screen and (max-width:600px) {
+                        padding: 4.275rem;
+                    }
+
                     svg {
                         height: 1.563rem;
                         width: 1.563rem;
@@ -212,6 +225,11 @@
                         @media screen and (max-width:1024px) {
                             height: 2.344rem;
                             width: 2.344rem;
+                        }
+
+                        @media screen and (max-width:600px) {
+                            height: 6.107rem;
+                            width: 6.107rem;
                         }
                     }
                 }
@@ -230,6 +248,10 @@
 
                     @media screen and (max-width:1024px) {
                         font-size: 1.563rem;
+                    }
+
+                    @media screen and (max-width:600px) {
+                        font-size: 3.665rem;
                     }
                 }
             }
