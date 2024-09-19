@@ -125,6 +125,11 @@
                 margin-bottom: 3.125rem;
             }
 
+            @media screen and (max-width:600px) {
+                row-gap: 6.107rem;
+                margin-bottom: 9.161rem;
+            }
+
             .field-input-wrapper {
                 flex: 0 0 48.769%;
                 max-width: 48.769%;
@@ -132,6 +137,11 @@
                 @media screen and (max-width:1024px) {
                     flex: 0 0 48.571%;
                     max-width: 48.571%;
+                }
+
+                @media screen and (max-width:600px) {
+                    flex: 0 0 100%;
+                    max-width: 100%;
                 }
 
                 .field-input {
@@ -152,6 +162,12 @@
                         font-size: 1.563rem;
                     }
 
+                    @media screen and (max-width:600px) {
+                        padding: 5.801rem 9.160rem;
+                        font-size: 4.275rem;
+                        border-radius: 10rem;
+                    }
+
                     &::placeholder {
                         font-family: 'Varela', Times, serif;
                         font-size: 1rem;
@@ -160,6 +176,10 @@
 
                         @media screen and (max-width:1024px) {
                             font-size: 1.563rem;
+                        }
+
+                        @media screen and (max-width:600px) {
+                            font-size: 4.275rem;
                         }
                     }
                 }

@@ -211,8 +211,8 @@ function Slider () {
                 <div className='prev-btn' onClick={handlePrevButtonClick}  onMouseEnter={handlePrevBtnMouseEnter} onMouseLeave={handlePrevBtnMouseLeave}>
 
                     {/* <svg width="1.5rem" height="1.563rem" viewBox="0 0 1.5rem 1.563rem" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_8208_3755)">
-                            <path d="M15 18.2891L9 12.2891L15 6.28906" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                        <g clipPath="url(#clip0_8208_3755)">
+                            <path d="M15 18.2891L9 12.2891L15 6.28906" stroke="white" strokeLinecap="round" strokeLinejoin="round"/>
                         </g>
                         <defs>
                             <clipPath id="clip0_8208_3755">
@@ -228,8 +228,8 @@ function Slider () {
                 </div>
                 <div className='next-btn' onClick={handleNextButtonClick} onMouseEnter={handleNextBtnMouseEnter} onMouseLeave={handleNextBtnMouseLeave}>
                     {/* <svg width="1.5rem" height="1.563rem" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_8208_5694)">
-                            <path d="M9 18.2891L15 12.2891L9 6.28906" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                        <g clipPath="url(#clip0_8208_5694)">
+                            <path d="M9 18.2891L15 12.2891L9 6.28906" stroke="white" strokeLinecap="round" strokeLinejoin="round"/>
                         </g>
                         <defs>
                             <clipPath id="clip0_8208_5694">
