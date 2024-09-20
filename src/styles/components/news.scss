@@ -291,6 +291,11 @@
                 column-gap: 1.875rem;
                 margin-bottom: 3.75rem;
 
+                @media screen and (max-width:1024px) {
+                    column-gap: 1.563rem;
+                    margin-bottom: 3.125rem;
+                }
+
                 &:last-of-type {
                     margin-bottom: 0;
                 }
