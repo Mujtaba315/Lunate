@@ -20,12 +20,21 @@
             width: 48%;
             border-top: .06rem solid;
 
+            @media screen and (max-width:1024px) {
+                width: 48.612%;
+            }
+
             .small-heading {
                 font-family: 'Space Grotesk', Times, serif;
                 font-weight: 700;
                 font-size: 1.5rem;
                 line-height: 1.914rem;
                 margin: 2.5rem 0;
+
+                @media screen and (max-width:1024px) {
+                    font-size: 2.5rem;
+                    margin: 3.125rem 0;
+                }
             }
 
             .big-heading {
@@ -33,11 +42,20 @@
                 font-weight: 700;
                 font-size: 3.375rem;
                 line-height: 4.306rem;
+                margin: 0;
+
+                @media screen and (max-width:1024px) {
+                    font-size: 3.438rem;
+                }
             }
         }
 
         .description-sec {
             width: 48%;
+
+            @media screen and (max-width:1024px) {
+                width: 48.612%;
+            }
 
             .description {
                 font-family: 'Varela', Times, serif;
@@ -45,6 +63,13 @@
                 font-size: 1.25rem;
                 line-height: 1.875rem;
                 margin: 0 0 3.75rem;
+
+                @media screen and (max-width:1024px) {
+                    font-size: 2.188rem;
+                    margin-bottom: 3.125rem;
+                    line-height: 1.429;
+                    letter-spacing: -.028rem;
+                }
             }
 
             .explore-link {
@@ -60,13 +85,29 @@
                 display: flex;
                 max-width: max-content;
 
+                @media screen and (max-width:1024px) {
+                    padding: 1.563rem 2.188rem;
+                    font-size: 1.875rem;
+                    line-height: 1.276;
+                }
+
                 .explore-link-span{
                     margin-left: .625rem;
                     overflow: hidden;
 
+                    @media screen and (max-width:1024px) {
+                        margin-left: 1.563rem;
+                    }
+
                     .explore-link-arrow {
                         margin-bottom: -.125rem;
                         fill: #fff;
+
+                        @media screen and (max-width:1024px) {
+                            height: 1.797rem;
+                            width: 1.797rem;
+                            margin-bottom: -.3rem;
+                        }
 
                         &.on-mouse-in {
                             animation-name: animateArrow;
