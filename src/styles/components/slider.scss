@@ -303,6 +303,10 @@
         z-index: 2;
         position: relative;
 
+        @media screen and (max-width:1024px) {
+            column-gap: 0.938rem;
+        }
+
         .prev-btn,
         .next-btn {
             width: 3.75rem;
@@ -314,6 +318,11 @@
             justify-content: center;
             cursor: pointer;
 
+            @media screen and (max-width:1024px) {
+                height: 5.625rem;
+                width: 5.625rem;
+            }
+
             .nav-btn-span{
                 display: flex;
                 overflow: hidden;
@@ -322,7 +331,16 @@
                 justify-content: center;
                 align-items: center;
 
+                @media screen and (max-width:1024px) {
+                    height: 2.25rem;
+                    width: 2.25rem;
+                }
+
                 .prev-btn-arrow {
+                    @media screen and (max-width:1024px) {
+                        height: 2rem;
+                        width: 2rem;
+                    }
                     &.on-mouse-in {
                         animation-name: animatePrevArrow;
                         animation-duration: .3s;
@@ -369,6 +387,10 @@
 
                 
                 .next-btn-arrow {
+                    @media screen and (max-width:1024px) {
+                        height: 2rem;
+                        width: 2rem;
+                    }
                     &.on-mouse-in {
                         animation-name: animateNextArrow;
                         animation-duration: .3s;
@@ -502,6 +524,10 @@
             transform: translateX(-50%);
             max-width: 47.675%;
 
+            @media screen and (max-width:1024px) {
+                height: 0.156rem;
+            }
+
             .swiper-scrollbar-drag {
                 cursor: pointer;
                 // margin-top: 14.9px;
@@ -513,6 +539,11 @@
                 position: absolute;
                 top: -.07rem;
                 max-width: 33.333%;
+
+                @media screen and (max-width:1024px) {
+                    height: 0.625rem;
+                    top: -.16rem;
+                }
             }
         }
     }
