@@ -173,6 +173,10 @@
                 
                 .swiper-slide{
                     margin-bottom: 9.375rem;
+
+                    @media screen and (max-width:1024px) {
+                        margin-bottom: 6.25rem;
+                    }
         
                     .slider-img {
                         // width: 60%;
@@ -512,5 +516,3 @@
         }
     }
 }
-
-// end
