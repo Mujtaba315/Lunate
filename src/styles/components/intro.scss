@@ -83,14 +83,29 @@
                 line-height: 1.436rem;
                 display: flex;
                 max-width: max-content;
+                align-items: center;
+
+                @media screen and (max-width:1024px) {
+                    font-size: 1.875rem;
+                    padding: 1.641rem 2.188rem;
+                }
 
                 .explore-link-span{
                     margin-left: .625rem;
                     overflow: hidden;
 
+                    @media screen and (max-width:1024px) {
+                        margin-left: 1.445rem;
+                    }
+
                     .explore-link-arrow {
                         margin-bottom: -.125rem;
                         fill: #A68B5C;
+
+                        @media screen and (max-width:1024px) {
+                            height: 1.797rem;
+                            width: 1.797rem;
+                        }
 
                         &.on-mouse-in {
                             animation-name: animateArrow;
@@ -159,6 +174,11 @@
                 font-size: 5.625rem;
                 line-height: 7.178rem;
                 margin: 0 0 1.25rem;
+
+                @media screen and (max-width:1024px) {
+                    margin: 0 0 1.563rem;
+                    line-height: 1.276;
+                }
             }
 
             .content-description {
@@ -168,6 +188,12 @@
                 line-height: 2.625rem;
                 margin: 0;
                 padding: 0 5rem;
+
+                @media screen and (max-width:1024px) {
+                    font-size: 2.5rem;
+                    padding: 0 3rem;
+                    line-height: 1.3;
+                }
             }
         }
     }
